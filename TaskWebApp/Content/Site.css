@@ -42,53 +42,145 @@ input[type="checkbox"].input-validation-error {
 }
 
 #profile-options {
-    display:none;
-    z-index:100;
+    display: none;
+    z-index: 100;
     background-color: rgb(238, 238, 238);
-    position:absolute;
-    border:solid;
+    position: absolute;
+    border: solid;
     border-color: rgb(128, 128, 128);
-    border-width:thin;
+    border-width: thin;
 }
 
 .profile-link {
     /*display:table-cell;*/
-    white-space:nowrap;
-
+    white-space: nowrap;
 }
 
 .profile-links {
-    list-style-type:none;
-    padding-left:10px;
-    padding-right:10px;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
     /*display:table-row;*/
 }
 
 #profile-link {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .claim-table, table, td, th {
-    margin-bottom:30px;
+    margin-bottom: 30px;
     border: solid;
-    border-width:thin;
-    border-color:rgb(187, 187, 187);
-    background-color:rgb(238,238,238);
-    width:100%;
-    table-layout:fixed;
+    border-width: thin;
+    border-color: rgb(187, 187, 187);
+    background-color: rgb(238,238,238);
+    width: 100%;
+    table-layout: fixed;
 }
 
 .claim-type {
     padding-right: 30px;
-    text-align:left;
+    text-align: left;
 }
 
 .claim-data {
-    padding-left:5px;
-    overflow-x:hidden;
-    text-overflow:ellipsis;
+    padding-left: 5px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 
 .claim-head {
-    background-color:rgb(157, 201, 212);
+    background-color: rgb(157, 201, 212);
+}
+
+.overwrite {
+    position: relative;
+}
+
+    .overwrite:after {
+        position: absolute;
+        top: 0rem;
+        left: 0;
+        display: block;
+        transform: rotate(-10deg);
+        color: darkblue;
+        font-family: 'Comic Sans MS';
+    }
+
+.year:after {
+    content: '202';
+}
+
+.comp:after {
+    content: 'UEFA';
+}
+
+.cup:after {
+    content: 'EURO';
+}
+
+.zero:after {
+    top: -1rem;
+    content: '0';
+}
+
+.one:after {
+    top: -1.5rem;
+    color: red;
+    content: '1';
+}
+
+
+.jumbotron {
+    background-image: url('./images/worldCupMain.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+    .jumbotron .container {
+        position: relative;
+        top: 100px;
+    }
+
+
+    .jumbotron h1 {
+        color: #fff;
+        font-size: 48px;
+        font-family: 'Shift', sans-serif;
+        font-weight: bold;
+    }
+
+    .jumbotron p {
+        font-size: 20px;
+        color: #fff;
+    }
+
+
+.learn-more h3 {
+    font-family: 'Shift', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.learn-more a {
+    color: #00b0ff;
+}
+
+
+
+.neighborhood-guides h2 {
+    color: #393c3d;
+    font-size: 24px;
+}
+
+.neighborhood-guides p {
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+.thumbnail {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
